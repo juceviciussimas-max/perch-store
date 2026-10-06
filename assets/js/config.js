@@ -23,17 +23,17 @@ window.PERCH = {
   },
   "product": {
     "id": "organizer",
-    "name": "Hanging Handbag Organizer",
+    "name": "The Hanging Bag Shelf",
     "colors": [
-      {
-        "id": "gray",
-        "name": "Grey",
-        "hex": "#7d8184"
-      },
       {
         "id": "beige",
         "name": "Beige",
-        "hex": "#d9cdae"
+        "hex": "#e4d6bb"
+      },
+      {
+        "id": "gray",
+        "name": "Grey",
+        "hex": "#8a8d90"
       }
     ],
     "sizes": [
@@ -64,44 +64,25 @@ window.PERCH = {
     "shelfHeight": 27,
     "gallery": [
       {
-        "src": "assets/img/hero-closet.webp",
-        "alt": "Three hanging organizers in grey and beige on a closet rod, each shelf holding a handbag",
-        "pos": "62% 50%"
+        "src": "assets/img/ai-hero-1100.webp",
+        "alt": "Beige four-shelf organizer in a cream and pink closet",
+        "pos": "86% 50%"
       },
       {
-        "src": "assets/img/in-use.webp",
-        "alt": "A person lifting a brown handbag out of a grey organizer"
+        "src": "assets/img/ai-vanity-800.webp",
+        "alt": "Two-shelf beige organizer beside a vanity in a blush bedroom"
       },
       {
         "src": "assets/img/close-up.webp",
-        "alt": "Close-up of a hand placing a leather handbag onto a beige mesh shelf"
+        "alt": "A hand placing a leather handbag onto a beige mesh shelf"
+      },
+      {
+        "src": "assets/img/hero-closet.webp",
+        "alt": "Grey and beige organizers side by side on a closet rod",
+        "pos": "62% 50%"
       }
     ],
     "variants": [
-      {
-        "id": "gray-s",
-        "color": "gray",
-        "size": "s",
-        "label": "Grey, Small (2 shelves)",
-        "price": 24.9,
-        "image": "assets/img/var-gray-s.webp"
-      },
-      {
-        "id": "gray-m",
-        "color": "gray",
-        "size": "m",
-        "label": "Grey, Medium (3 shelves)",
-        "price": 29.9,
-        "image": "assets/img/var-gray-m.webp"
-      },
-      {
-        "id": "gray-l",
-        "color": "gray",
-        "size": "l",
-        "label": "Grey, Large (4 shelves)",
-        "price": 34.9,
-        "image": "assets/img/var-gray-l.webp"
-      },
       {
         "id": "beige-s",
         "color": "beige",
@@ -125,6 +106,30 @@ window.PERCH = {
         "label": "Beige, Large (4 shelves)",
         "price": 34.9,
         "image": "assets/img/var-beige-l.webp"
+      },
+      {
+        "id": "gray-s",
+        "color": "gray",
+        "size": "s",
+        "label": "Grey, Small (2 shelves)",
+        "price": 24.9,
+        "image": "assets/img/var-gray-s.webp"
+      },
+      {
+        "id": "gray-m",
+        "color": "gray",
+        "size": "m",
+        "label": "Grey, Medium (3 shelves)",
+        "price": 29.9,
+        "image": "assets/img/var-gray-m.webp"
+      },
+      {
+        "id": "gray-l",
+        "color": "gray",
+        "size": "l",
+        "label": "Grey, Large (4 shelves)",
+        "price": 34.9,
+        "image": "assets/img/var-gray-l.webp"
       }
     ]
   }

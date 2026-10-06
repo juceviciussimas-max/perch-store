@@ -74,7 +74,7 @@ const fill = (html) =>
     .replace(/\{\{([A-Za-z0-9]+)\}\}/g, (m, k) => (k in tokens ? tokens[k] : m));
 
 const pages = [
-  { file: 'index.html', src: 'index', title: `${cfg.name} | ${cfg.tagline}`, desc: 'A hanging organizer that gives every handbag its own see-through shelf. Three sizes, two colours, ships to your door.', script: 'home', cls: 'page-home' },
+  { file: 'index.html', src: 'index', title: `${cfg.name} | ${cfg.tagline}`, desc: 'A hanging organizer that gives every handbag its own see-through shelf. Three sizes, beige or grey.', script: 'home', cls: 'page-home', vendor: true },
   { file: 'checkout.html', src: 'checkout', title: `Checkout | ${cfg.name}`, desc: 'Secure checkout.', script: 'checkout', cls: 'page-checkout', noindex: true, minimal: true },
   { file: 'shipping.html', src: 'shipping', title: `Shipping | ${cfg.name}`, desc: 'Delivery times, costs and tracking.', cls: 'page-info' },
   { file: 'returns.html', src: 'returns', title: `Returns | ${cfg.name}`, desc: 'How returns and refunds work.', cls: 'page-info' },
@@ -157,19 +157,19 @@ const layout = (p, body) => `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#edefee">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101312">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fffbf7">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#fffbf7">
 <title>${p.title}</title>
 <meta name="description" content="${p.desc}">
 ${p.noindex ? '<meta name="robots" content="noindex">' : ''}
 <meta property="og:title" content="${p.title}">
 <meta property="og:description" content="${p.desc}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="${cfg.siteUrl ? cfg.siteUrl.replace(/\/$/, '') + '/' : ''}assets/img/hero-closet.webp">
+<meta property="og:image" content="${cfg.siteUrl ? cfg.siteUrl.replace(/\/$/, '') + '/' : ''}assets/img/ai-hero.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/bodoni-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -182,6 +182,7 @@ ${footer}
 ${drawer}
 <script src="assets/js/config.js"></script>
 <script src="assets/js/app.js"></script>
+${p.vendor ? '<script src="assets/vendor/gsap.min.js"></script>\n<script src="assets/vendor/ScrollTrigger.min.js"></script>' : ''}
 ${p.script ? `<script src="assets/js/${p.script}.js"></script>` : ''}
 </body>
 </html>
@@ -196,7 +197,7 @@ for (const p of pages) {
 const hangerPath = icon('coat-hanger').match(/<path d="([^"]+)"/)[1];
 write(
   'favicon.svg',
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" rx="56" fill="#d63b1e"/><g transform="translate(40 40) scale(0.75)"><path fill="#fff" d="${hangerPath}"/></g></svg>\n`
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" rx="56" fill="#3a2a2e"/><g transform="translate(40 40) scale(0.75)"><path fill="#f4d3d6" d="${hangerPath}"/></g></svg>\n`
 );
 
 console.log(`Built ${pages.length} pages.`);
