@@ -1,0 +1,59 @@
+{
+  "product": {
+    "id": "organizer",
+    "name": "Hanging Handbag Organizer",
+    "colors": [
+      {
+        "id": "gray",
+        "name": "Grey",
+        "hex": "#7d8184"
+      },
+      {
+        "id": "beige",
+        "name": "Beige",
+        "hex": "#d9cdae"
+      }
+    ],
+    "sizes": [
+      {
+        "id": "s",
+        "name": "Small",
+        "shelves": 2,
+        "height": 70,
+        "price": 24.9
+      },
+      {
+        "id": "m",
+        "name": "Medium",
+        "shelves": 3,
+        "height": 95,
+        "price": 29.9
+      },
+      {
+        "id": "l",
+        "name": "Large",
+        "shelves": 4,
+        "height": 120,
+        "price": 34.9
+      }
+    ],
+    "width": 40,
+    "depth": 16,
+    "shelfHeight": 27,
+    "gallery": [
+      {
+        "src": "assets/img/hero-closet.webp",
+        "alt": "Three hanging organizers in grey and beige on a closet rod, each shelf holding a handbag",
+        "pos": "62% 50%"
+      },
+      {
+        "src": "assets/img/in-use.webp",
+        "alt": "A person lifting a brown handbag out of a grey organizer"
+      },
+      {
+        "src": "assets/img/close-up.webp",
+        "alt": "Close-up of a hand placing a leather handbag onto a beige mesh shelf"
+      }
+    ]
+  }
+}

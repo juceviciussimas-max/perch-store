@@ -1,0 +1,21 @@
+{
+  "name": "Perch",
+  "tagline": "Hanging handbag organizers",
+  "email": "hello@perch-closet.example",
+  "legalName": "Your Company Ltd",
+  "legalAddress": "Street 1, City, Country",
+  "vatId": "",
+  "siteUrl": "",
+  "currency": "EUR",
+  "locale": "en-IE",
+  "shippingFlat": 3.9,
+  "freeShippingOver": 45,
+  "deliveryDays": "8 to 16 days",
+  "returnDays": 30,
+  "discounts": [
+    { "minQty": 2, "pct": 10 },
+    { "minQty": 3, "pct": 15 }
+  ],
+  "paypalClientId": "",
+  "orderEndpoint": ""
+}
